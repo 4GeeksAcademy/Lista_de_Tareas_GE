@@ -30,3 +30,12 @@ input{
     width: 100%;
 
 }
+#trash{
+    opacity: 1;
+    color: red;
+    background-color: yellow;
+}
+
+.myLi:hover > #trash {
+    opacity: 0;
+}

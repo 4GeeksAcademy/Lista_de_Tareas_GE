@@ -35,7 +35,7 @@ const TodoList = () => {
 							<li key={index} onMouseEnter={() => setHidden(false)} onMouseLeave={() => setHidden(true)}>
 								{item}  
 								{hidden ? null : 
-									<i id="trash" className="fas fa-trash-alt" 
+									<i className="fas fa-trash-alt" 
 								 		onClick={() =>
 											setTodos(
 												todos.filter(
