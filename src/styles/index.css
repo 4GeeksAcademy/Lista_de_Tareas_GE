@@ -30,12 +30,12 @@ input{
     width: 100%;
 
 }
-#trash{
-    opacity: 1;
-    color: red;
-    background-color: yellow;
+
+.trash{
+    visibility: hidden;
+    cursor: pointer;
 }
 
-.myLi:hover > #trash {
-    opacity: 0;
+.todoName:hover .trash {
+    visibility: visible;
 }

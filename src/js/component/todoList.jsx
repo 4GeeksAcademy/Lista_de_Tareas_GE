@@ -30,12 +30,10 @@ const TodoList = () => {
 						}
 					placeholder="Que necesitas hacer?"/>
 				</li>
-
 						{todos.map((item, index) =>(
-							<li key={index} onMouseEnter={() => setHidden(false)} onMouseLeave={() => setHidden(true)}>
+							<li className="todoName" key={index}>
 								{item}  
-								{hidden ? null : 
-									<i id="trash" className="fas fa-trash-alt" 
+									<i className="trash fas fa-trash-alt" 
 								 		onClick={() =>
 											setTodos(
 												todos.filter(
@@ -43,10 +41,9 @@ const TodoList = () => {
 												)
 											)
 										}
-									
 									>
 									</i>
-								}
+								
 							</li>
 						))}
 					
