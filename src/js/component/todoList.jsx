@@ -7,7 +7,6 @@ import React, { useState } from "react";
 const TodoList = () => {
 	const [inputValue, setInputvalue] = useState("");
 	const [todos, setTodos] = useState([]);
-	const [hidden, setHidden] = useState(true);
 
 	return (
 		<div className="container">
@@ -26,7 +25,6 @@ const TodoList = () => {
 										}
 									}
 								}
-								
 						}
 					placeholder="Que necesitas hacer?"/>
 				</li>
@@ -46,8 +44,6 @@ const TodoList = () => {
 								
 							</li>
 						))}
-					
-
 			</ul>
 			<div>{todos.length}   {todos.length === 0 ? "Lista vacia, agrega una tarea" : "Tareas"}</div>
 			
